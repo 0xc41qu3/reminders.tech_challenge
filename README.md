@@ -40,9 +40,8 @@ Como desenvolvedor front-end, você foi requisitado para desenvolver a parte vis
 ## Recomendado
 
 1. Utilizar de algum método de tipagem ([TypeScript](https://www.typescriptlang.org) ou [PropTypes](https://github.com/facebook/prop-types) por exemplo);
-2. Implementar testes automartizados.
-
-> Obs.: Mesmo esta sendo uma aplicação simples, considere a sua escalabilidade.
+2. Implementar testes automartizados;
+3. Mesmo esta sendo uma aplicação simples, considere a sua escalabilidade.
 
 ## Envio do Desafio
 
