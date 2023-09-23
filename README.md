@@ -13,7 +13,7 @@ npm run server
 
 ## Proposta de Solução
 
-Como desenvolvedor front-end, você foi requisitado para desenvolver a parte visual de uma aplicação de gerencimaneto de afazeres conforme os critérios de aceitação abaixo:
+Como desenvolvedor front-end, você foi requisitado para desenvolver a parte visual de uma aplicação de gerencimaneto de afazeres utilizando a biblioteca [React](https://react.dev), seguindo os critérios de aceitação abaixo:
 
 1. A aplicação terá uma **tela de listagem** e uma **tela de detalhes** para a tarefa selecionada;
 2. Ao acessar a tela de detalhes da tarefa sem informar qual a tarefa selecionada o usuário deve ser redirecionado para a listagem dos afazeres;
