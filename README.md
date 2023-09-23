@@ -1,46 +1,49 @@
-# Getting Started with Create React App
+# Teste Técnico de Front-End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Para realizar este teste é necessário que você siga os seguintes passos:
 
-## Available Scripts
+1. Clone este repostório;
+2. Esteja com o servidor que provêm o serviço externo para integração iniciado e para isso execute o seguinte comando estando dentro do projeto recém-clonado:
 
-In the project directory, you can run:
+```bash
+npm run server
+```
 
-### `npm start`
+> Obs.: Este é o endereço para consumo: `http://localhost:3001`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Proposta de Solução
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Como desenvolvedor front-end, você foi requisitado para desenvolver a parte visual de uma aplicação de gerencimaneto de afazeres conforme os critérios de aceitação abaixo:
 
-### `npm test`
+1. A aplicação terá uma **tela de listagem** e uma **tela de detalhes** para a tarefa selecionada;
+2. Ao acessar a tela de detalhes da tarefa sem informar qual a tarefa selecionada o usuário deve ser redirecionado para a listagem dos afazeres;
+3. Cada tarefa deve possibilitar inserir as seguintes informações:
+   - Título
+   - Estado de conclusão -- podendo estar concluída ou não;
+   - Observações;
+   - Data estimada para conclusão.
+4. Ao registrar um novo afazer, este deve começar como não concluído;
+5. Por enquanto, os afazeres serão armazenados apenas localmente no dispositivo do usuário;
+6. Ao tentar marcar uma tarefa como concluída, deve ser verificado se o usuário tem permissão para realizar a ação antes de sinalizá-la como feito;
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> Obs.: Utilize do _endpoint_ `/auth`, qual possui o seguinte retorno:
 
-### `npm run build`
+```ts
+{
+  authorized: boolean;
+}
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. Deve haver um campo de busca para as tarefas existentes, permitindo realizá-la por qualquer dado que compõe a tarefa, indiferente do seu estado atual de conclusão;
+7. Uma mensagem de erro deve ser logada no console caso ocorra alguma falha ao tentar consumir o serviço externo.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Recomendado
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Utilizar de algum método de tipagem (TypeScript ou PropTypes por exemplo);
+2. Implementar testes automartizados.
 
-### `npm run eject`
+> Obs.: Mesmo esta sendo uma aplicação simples, considere a sua escalabilidade.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Envio do Desafio
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Dado que o desafio foi concluído, envie o link de acesso ao repositório à pessoa com quem entrou em contato contigo inicialmente para que possamos avaliar a sua solução.
